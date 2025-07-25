@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yang Liu">
+    <meta name="description" content="This is my personal homepage (CA1 Assignment 1: HTML / CSS), including personal information, career goals, educational background, work experience, skills and hobbies.">
+    <meta name="keywords" content="Yang Liu, Personal, Education, Career, Skills, Hobbies">
+    <title>Yang Liu</title>
+  
+    <!-- Google Fonts: Permanent Marker -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar_header">
+        <h2>Yang Liu</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Homepage</a></li>
+          <li><a href="#personal-info">Personal Information</a></li>
+          <li><a href="#career">Skills</a></li>
+          <li><a href="#profile-tabs">Resume</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#hire_sec">Hire Me</a></li>
+        </ul>
+      </nav>
+    </aside>
+  
+    <!-- Main Content Area -->
+    <div class="main_content">
+      <!-- Hero Section -->
+      <header class="hero" id="home">
+        <div class="hero_content">
+          <h1>Yang Liu</h1>
+          <p class="motto">
+            Leveling Up, One Day at a Time
+          </p>
+        </div>
+      </header>
+  
+      <!-- Personal Information Section -->
+      <section id="personal-info" class="personal_info_section">
+        <!-- Left Column: Title -->
+        <div class="personal_information_left">
+          <h2>Personal Information</h2>
+        </div>
+        <!-- Right Column: Avatar and Information Table -->
+        <div class="personal_information_right">
+          <!-- Avatar Column -->
+          <div class="avatar_column">
+            <div class="personal_information_circle">
+              <img src="images/photo.jpg" alt="My Photo" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+          </div>
+          <!-- Information Column -->
+          <div class="information_column">
+            <table class="personal_information_table">
+              <tr>
+                <td>Name:</td>
+                <td>Yang Liu</td>
+              </tr>
+              <tr>
+                <td>age:</td>
+                <td>24 years</td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td>richard.yang0824@gmail.com</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Career Section -->
+      <section id="career" class="career_background_section">
+        <h2>My Skills</h2>
+        <div class="skills_circle_container">
+          <!-- skill cards -->
+          <div class="skills_circle_card">
+            <div class="circle_progress" data-percent="80">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle_bg" cx="50" cy="50" r="44"></circle>
+                <circle class="circle_bar" cx="50" cy="50" r="44"></circle>
+                <text x="50" y="55" class="circle_percent">80%</text>
+              </svg>
+            </div>
+            <div class="skill_label">AI Development & Automation</div>
+              <div class="skills_tags">
+                <span>n8n</span><span>RNN</span><span>Machine Learning</span>
+              </div>
+          </div>
+
+          <div class="skills_circle_card">
+            <div class="circle_progress" data-percent="85">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle_bg" cx="50" cy="50" r="44"></circle>
+                <circle class="circle_bar" cx="50" cy="50" r="44"></circle>
+                <text x="50" y="55" class="circle_percent">85%</text>
+              </svg>
+            </div>
+            <div class="skill_label">Web Development & Front-End</div>
+            <div class="skills_tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span>
+            </div>
+          </div>
+
+          <div class="skills_circle_card">
+            <div class="circle_progress" data-percent="85">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle_bg" cx="50" cy="50" r="44"></circle>
+                <circle class="circle_bar" cx="50" cy="50" r="44"></circle>
+                <text x="50" y="56" class="circle_percent">85%</text>
+              </svg>
+            </div>
+            <div class="skill_label">Programming & Data Analytics</div>
+            <div class="skills_tags">
+              <span>Python</span><span>C++</span><span>PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skills_circle_card">
+            <div class="circle_progress" data-percent="95">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle_bg" cx="50" cy="50" r="44"></circle>
+                <circle class="circle_bar" cx="50" cy="50" r="44"></circle>
+                <text x="50" y="56" class="circle_percent">95%</text>
+              </svg>
+            </div>
+            <div class="skill_label">Office Suite & Presentation</div>
+            <div class="skills_tags">
+              <span>Microsoft Word</span><span>PowerPoint</span>
+            </div>
+          </div>
+
+          <div class="skills_circle_card">
+            <div class="circle_progress" data-percent="90">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle_bg" cx="50" cy="50" r="44"></circle>
+                <circle class="circle_bar" cx="50" cy="50" r="44"></circle>
+                <text x="50" y="56" class="circle_percent">0%</text>
+              </svg>
+            </div>
+            <div class="skill_label">Collaboration & Productivity Tools</div>
+            <div class="skills_tags">
+              <span>Docker deployment</span><span>Jupyter Notebook</span>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+      <!-- Resume Section -->
+      <section id="profile-tabs" class="profile_tabs_section">
+        <div class="profile_tabs_nav">
+          <button class="btn2 tab_btn active" data-tab="education">
+            <span class="spn2">Education</span>
+          </button>
+          <button class="btn2 tab_btn" data-tab="union">
+            <span class="spn2">Student Union</span>
+          </button>
+          <button class="btn2 tab_btn" data-tab="internship">
+            <span class="spn2">Internship</span>
+          </button>
+          <button class="btn2 tab_btn" data-tab="hobbies">
+            <span class="spn2">Hobbies</span>
+          </button>
+          <button class="btn2 tab_btn" data-tab="achievement">
+            <span class="spn2">Achievements</span>
+          </button>
+        </div>
+        <div class="profile_tabs_content">
+          <!-- Education -->
+          <div class="tab_panel active" id="tab-education">
+            <h2>Education</h2>
+            <div class="edu_card">
+              <div class="edu_item">
+                <div class="edu_title">University of Liverpool</div>
+                <div class="edu_subtitle">MSc Data Science and AI <span class="edu_time">Sep. 2024 - Jun. 2026</span></div>
+                <div class="edu_tags">
+                  <span>Web Programming</span>
+                  <span>Machine Learning</span>
+                  <span>Data Analysis</span>
+                  <span>Programming Fundamentals</span>
+                  <span>Applied AI</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="edu_card">
+              <div class="edu_item">
+                <div class="edu_title">Nanjing University of Information Science and Technology</div>
+                <div class="edu_subtitle">B.S. in Atmospheric Sciences <span class="edu_time">Sep. 2019 - Jun. 2023</span></div>
+                <div class="edu_tags">
+                  <span>Probability & Statistics</span>
+                  <span>Numerical Weather Prediction</span>
+                  <span>GIS Applications</span>
+                  <span>Hydrometeorology</span>
+                  <span>Data Assimilation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Student Union -->
+          <div class="tab_panel" id="tab-union">
+            <h2>Student Union Experience</h2>
+            <div class="edu_card">
+              <div class="edu_item">
+                <div class="edu_title">Media Center</div>
+                <div class="edu_subtitle">Secretary-General <span class="edu_time">Jul. 2021 - Jun. 2022</span></div>
+                <ul class="edu_desc">
+                  <li>
+                    Selected as one of the university's Top 10 Student-Teacher Representatives to participate in the post-performance 
+                    discussions of the Jiangsu Opera Tour during the "Youth Dialogue" program, contributing insights on societal 
+                    responsibilities and publishing a reflective article in Xinhua Daily News.
+                  </li>
+                  <li>
+                    Drafted the constitution for the Media Center of Nanjing University of Information Science and Technology, 
+                    gaining approval from senior management.
+                  </li>
+                  <li>
+                    Managed the university's official WeChat account, overseeing content selection and ensuring alignment with 
+                    institutional goals and national rankings.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="edu_card">
+              <div class="edu_item">
+                <div class="edu_title">Sunshine Psychological Association</div>
+                <div class="edu_subtitle">Head of Activities Department <span class="edu_time">Dec. 2019 - Jun. 2021</span></div>
+                <ul class="edu_desc">
+                  <li>
+                    Organized and executed NUIST's inaugural "Psychological Group Counseling Competition," earning school-wide 
+                    recognition through independent planning, framework design, and effective coordination with judges and participants.
+                    The event's success led to a university appointment as a Peer Mentor to guide and support students.
+                  </li>
+                  <li>
+                    Conducted monthly psychological group counseling sessions for Longshan College and trained psychological
+                    committee members and hosts.
+                  </li>
+                  <li>
+                    Executed university-mandated tasks successfully by collaborating with the psychological center.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Intership -->
+          <div class="tab_panel" id="tab-internship">
+            <h2>Internship Experience</h2>
+            <div class="edu_card">
+              <div class="edu_item">
+                <div class="edu_title">AI Intern, Darwinic</div>
+                <div class="edu_subtitle">AI Bot Design & n8n Automation <span class="edu_time">2025.04–Now</span></div>
+                <ul class="edu_desc">
+                  <li>Developed workflow automation bots using n8n and integrated various AI APIs.</li>
+                  <li>Participated in the design and deployment of business process automation solutions.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hobby -->
+          <div class="tab_panel" id="tab-hobbies">
+            <div class="hobbies_side_layout">
+              <div class="hobbies_pics_block">
+                <div class="hobbies_pics_row top">
+                  <div class="hobby_picture_item">
+                    <div class="hobby_picture_flip"><div class="hobby_picture_inner">
+                      <div class="hobby_picture_front"><img src="images/hobby1.jpeg" alt="Photography"></div>
+                      <div class="hobby_picture_back"><p>Photography</p></div>
+                    </div></div>
+                  </div>
+                  <div class="hobby_picture_item">
+                    <div class="hobby_picture_flip"><div class="hobby_picture_inner">
+                      <div class="hobby_picture_front"><img src="images/hobby2.jpeg" alt="Urban Dance"></div>
+                      <div class="hobby_picture_back"><p>Urban Dance</p></div>
+                    </div></div>
+                  </div>
+                  <div class="hobby_picture_item">
+                    <div class="hobby_picture_flip"><div class="hobby_picture_inner">
+                      <div class="hobby_picture_front"><img src="images/hobby3.jpeg" alt="Piano"></div>
+                      <div class="hobby_picture_back"><p>Piano</p></div>
+                    </div></div>
+                  </div>
+                </div>
+                <div class="hobbies_pics_row bottom">
+                  <div class="hobby_picture_item">
+                    <div class="hobby_picture_flip"><div class="hobby_picture_inner">
+                      <div class="hobby_picture_front"><img src="images/hobby4.jpeg" alt="Painting"></div>
+                      <div class="hobby_picture_back"><p>Painting</p></div>
+                    </div></div>
+                  </div>
+                  <div class="hobby_picture_item">
+                    <div class="hobby_picture_flip"><div class="hobby_picture_inner">
+                      <div class="hobby_picture_front"><img src="images/hobby5.jpeg" alt="Psychology"></div>
+                      <div class="hobby_picture_back"><p>Psychology</p></div>
+                    </div></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Hobby Information -->
+              <div class="hobbies_text_column">
+                <div class="hobbies_main_arttext">Love, Art & Exploration.</div>
+                <div class="hobbies_text">
+                  Every creative endeavor is a journey of self-expression.<br>
+                  Photography, painting, piano, street dance, and psychology have all enriched my perspective, inspiring not only my daily life but also more human-centered AI solutions.
+                </div>
+                <span class="hobbies_text_tagline">— Find beauty in every experience.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement -->
+          <div class="tab_panel" id="tab-achievement">
+            <h2>Certifications & Achievements</h2>
+            <div class="glass-cert-container">
+              <div class="glass-cert-card" data-text="Scholarship">
+                <span class="glass-cert-icon">🏅</span>
+                <span class="glass-cert-title">
+                  Top 5% of Class, First Class Scholarship
+                </span>
+              </div>
+              <div class="glass-cert-card" data-text="Cadre">
+                <span class="glass-cert-icon">🎖️</span>
+                <span class="glass-cert-title">
+                  Outstanding Student Cadre
+                </span>
+              </div>
+              <div class="glass-cert-card" data-text="Volunteer">
+                <span class="glass-cert-icon">🤝</span>
+                <span class="glass-cert-title">
+                  Advanced Individual Volunteer Award
+                </span>
+              </div>
+              <div class="glass-cert-card" data-text="IT">
+                <span class="glass-cert-icon">💻</span>
+                <span class="glass-cert-title">
+                  Level 2 & 3 Certificate, National Computer Rank Examination (China)
+                </span>
+              </div>
+              <div class="glass-cert-card" data-text="Psychology">
+                <span class="glass-cert-icon">🧠</span>
+                <span class="glass-cert-title">
+                  National Psychological Committee Training Certificate (China)
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Downlodad Resume-->
+      <section class="download_resume_section">
+        <div class="download_resume_content">
+          <h2>Download My Resume</h2>
+          <a href="your_resume.pdf" download class="button">
+            <span class="button_lg">
+              <span class="button_sl"></span>
+              <span class="button_text">Download Resume</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+      <section id="project" class="project_section">
+        <div class="loader">
+          <h2>My project</h2>
+          <div class="loader-inner">
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+            <div class="loader-block"></div>
+          </div>
+        </div>
+        <div class="projects_container">
+          <!-- SmartCall -->
+          <div class="project-wrapper">
+            <a class="project-card" href="https://github.com/Richard-Yang-Liu/smartcall-intelligent-voice-assistant" target="_blank">
+              <div class="card">
+                <div class="border"></div>
+                <div class="content">
+                  <div class="project-title">SmartCall</div>
+                  <div class="project-desc">Intelligent Voice Assistant</div>
+                  <span class="click-more">View More</span>
+                </div>
+              </div>
+            </a>
+            <div class="side-fan-gallery">
+              <div class="side-img left"><img src="images/smartcall.png" alt="left"></div>
+            </div>
+          </div>
+          <!-- Meow Web Game -->
+          <div class="project-wrapper">
+            <a class="project-card" href="https://github.com/Richard-Yang-Liu/Meow-Game-Deom/blob/main/README.md" target="_blank">
+              <div class="card">
+                <div class="border"></div>
+                <div class="content">
+                  <div class="project-title">Meow Web Game</div>
+                  <div class="project-desc">Classic Web Games</div>
+                  <span class="click-more">View More</span>
+                </div>
+              </div>
+            </a>
+            <div class="side-fan-gallery">
+              <div class="side-img right"><img src="images/meow.png" alt="right"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Hire Me Section -->
+      <section class="hire_me" id="hire_sec">
+        <div class="overlay">
+          <div class="container">
+            <h2>Let' s Build the Future Together</h2>
+            <p>Open to opportunities in AI, Data Science, and Creative Tech. Let' s connect and create impact together</p>
+            <div class="contact_form_container">
+              <!-- Left Column: Contact Form -->
+              <div class="contact_form">
+                <form action="https://formsubmit.co/el/guxavi" method="POST" id="contact-form">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="submit_time" id="submit-time">
+                  <label for="name">Your Name</label>
+                  <div class="input-container">
+                    <input class="fancy-input" type="text" id="name" name="name" placeholder="Your Name" required>
+                  </div>
+                  <label for="email">Your Email</label>
+                  <div class="input-container">
+                    <input class="fancy-input" type="email" id="email" name="email" placeholder="Your Email" required>
+                  </div>
+                  <label for="message">Message</label>
+                  <div class="input-container">
+                    <textarea class="fancy-input textarea" id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                  </div>
+                  <button type="submit" class="fancy-btn">CONTACT ME</button>
+                </form>
+              </div>
+              <!-- Right Column: Information -->
+              <div class="card-column">
+                <div class="hireCard">
+                  <div class="face back">
+                    <div class="content">
+                      <h3>Why Work With Me?</h3>
+                      <ul class="tag-list">
+                        <li class="tag-item">AI & AutomatSion</li>
+                        <li class="tag-item">Data Science</li>
+                        <li class="tag-item">Global Vision</li>
+                        <li class="tag-item">Innovation</li>
+                        <li class="tag-item">Reliable</li>
+                      </ul>
+                      <p class="email-contact">Leveling Up, One Day at a Time</p>
+                    </div>
+                  </div>
+                  <div class="face front">
+                    <b>Hire me</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-info">
+            <span><strong>Email:</strong> <a href="mailto:richard.yang0824@gmail.com">richard.yang0824@gmail.com</a></span>
+            <span><strong>Name:</strong> Yang Liu</span>
+            <span class="footer-lastmod">
+              <strong>Last modified: </strong> <span id="last-mod-date"></span>
+            </span>
+          </div>
+          <div class="footer-copyright">
+            <strong>© 2025 Yang Liu. All Rights Reserved.</strong>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" style="display:none;">
+      <div class="modal-content">
+        <div class="modal-loader-area">
+          <div class="flying-loader-wrap">
+            <div class="modal-loader">
+              <span>
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <div class="modal-base">
+                <span></span>
+                <div class="modal-face"></div>
+              </div>
+            </div>
+            <div class="modal-longfazers">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+        <div class="success-text">
+          <h3>Email sent successfully!</h3>
+          <p>
+            Thank you for reaching out.<br>
+            I have received your message and will get back to you soon.<br>
+            You can continue browsing, or click below to close this message.
+          </p>
+          <button id="close-modal-btn" class="fancy-btn" style="margin-top: 24px; min-width: 100px;">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
